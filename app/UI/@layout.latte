@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/resources/styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Agent@Mail.Ru</title>
+</head>
+
+<body>
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+	<div class="page">
+		<div class="header"> <!-- Шапка -->
+			<div class="logo">
+				<a href="#" title="Агент@Mail.Ru"></a> <!-- Лого -->
+			</div>
+			<div class="menu"> <!-- Меню -->
+				<a href="#">Загрузить</a>
+				<a href="#">Регистрация</a>
+				<a href="#">Найти собеседника</a>
+				<a href="#">Поддержать проект ;-)</a>
+			</div>
+		</div>
+		<div class="page_body"> <!-- Вся хуйня страницы -->
+			<div class="left_right">
+				<div class="left"> <!-- Сторона с листочком -->
+					<div class="notepaper">  <!-- Листочек -->
+						<div class="list">  <!-- Список -->
+							<div class="title">
+								Скачать Агент:
+							</div>
+							<a href="#">Агент для Windows</a>
+							<a href="#">Мобильный J2ME Агент</a>
+						</div>
+					</div>
+					<div class="notepaper blue" style="margin-top: 10px;">  <!-- Листочек -->
+						<div class="list">  <!-- Список -->
+							<div class="title">
+								Статистика по использованию:
+							</div>
+							<a href="#">234 зарегистрированных пользователя</a>
+							<a href="#">52 пользователя в сети</a>
+						</div>
+					</div>
+				</div>
+				<div class="right"> <!-- Правая сторона с информацией -->
+					{include content}
+				</div>
+			</div>
+		</div>
+		<div class="footer_blue">
+			<img src="/resources/images/agent_mailru_logo_small.gif">
+		</div>
+		<div class="footer">
+			<div class="left">
+				© Mail.Ru<br>
+				© 2024, Команда Tutmonde<br>
+			</div>
+			<div class="right">
+				<a href="#">Telegram</a> | 
+				<a href="#">OpenVK</a> | 
+				<a href="#">GitHub</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+{block scripts}
+<script src="https://unpkg.com/nette-forms@3"></script>
+{/block}
+
+</html>
