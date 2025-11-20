@@ -9,7 +9,7 @@ application:
 
 
 database:
-	dsn: 'sqlite::memory:'
+	dsn: 'mysql:host=localhost;dbname=mrimdb'
 	user:
 	password:
 

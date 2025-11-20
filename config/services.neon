@@ -1,5 +1,8 @@
 services:
 	- App\Core\RouterFactory::createRouter
+	- App\Auth\Auth
+	- App\Auth\User
+	- App\Auth\UserIdentity
 
 
 search:

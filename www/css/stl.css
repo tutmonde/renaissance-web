@@ -1,0 +1,310 @@
+/*main styles*/
+img {border:0}
+body, td
+			{font: normal 75% Tahoma; vertical-align:top; color:#000000}
+body
+			{margin:0; padding:0; background: white url('../img/bg_body.gif') left top repeat-x}
+
+a
+			{color:#008ed1; text-decoration:underline}
+a:hover
+			{text-decoration:underline; color:#ff7e00}
+
+input,select,textarea
+			{font:100% Tahoma, Helvetica, sans-serif; color:#000000}
+input,select
+			{height:18px}
+input		
+			{height:16px}
+input.but	
+			{height:21px; background-image:url('../img/but_bg.gif'); border:1px solid #0A97C1; color:#FFF; font:bold 100% 'Trebuchet MS', Tahoma, Arial, sans-serif}
+input.but:hover
+			{cursor:pointer}
+
+div.outermenu
+			{height: 27px; margin: 0 0 11px 0}
+
+table.index td.col2
+			{background: url('../img/bg_index.jpg') right -37px no-repeat}
+table.index td.col3
+			{background: url('../img/bg_index2.jpg') left -37px no-repeat}
+
+table.inner td.col2
+			{background: url('../img/bg_inner.jpg') right 27px no-repeat}
+table.inner td.col3
+			{background: url('../img/bg_inner2.jpg') left 27px no-repeat}
+
+p			{margin-top:0; padding-top:0}
+
+
+/*top menu*/
+div.topmenu
+			{background: #8D4701 url('../img/bg_topmenu1.gif') left top repeat-x; margin: 0 0 5px 0}
+div.topmenu table.topmenu
+			{background: url('../img/bg_topmenu2.jpg') right top no-repeat}
+div.topmenu table.topmenu td.c1
+			{background: url('../img/bg_topmenu3.gif') left top no-repeat}
+div.topmenu table.topmenu td.c2
+			{background: url('../img/bg_topmenu4.gif') right top no-repeat; padding: 0 4px 0 0}
+
+div.topmenu table.topmenu td.c2 a
+			{color:#ffffff; text-decoration:none; display:table; padding: 0 10px 0 0; margin:0 1px 0 1px; float:left}
+div.topmenu table.topmenu td.c2 a b
+			{font:bold 100% Tahoma; color:#ffffff; text-decoration:none; padding:17px 0 17px 10px; line-height:14px; _height:48px; display:table; _cursor:pointer; white-space: nowrap}
+
+div.topmenu table.topmenu td.c2 a.active, div.topmenu table.topmenu td.c2 a:hover
+			{color:#ffffff; text-decoration:none; background: url('../img/act_right.gif') right 12px no-repeat; display:table}
+div.topmenu table.topmenu td.c2 a.active b, div.topmenu table.topmenu td.c2 a:hover b
+			{color:#8D4701; text-decoration:none; background: url('../img/act_left.gif') left 12px no-repeat; display:table}
+
+/*footer*/
+div.footer
+			{background: #8D4701 url('../img/bg_topmenu2.jpg') right center no-repeat; margin: 195px 0 5px 0}
+div.footer div.x
+			{background: url('../img/bg_footer.gif') right top no-repeat}
+table.footer td
+			{font:normal 65% Verdana; padding: 0px 20px 5px 20px; color:#929d9e}
+table.footer td.c2
+			{text-align:right}
+table.footer td.c2 a
+			{font: 110% Tahoma}
+
+/*download*/
+div.download
+			{background: url('../img/center_right_down_old.gif') right bottom no-repeat; z-index:30; position:relative}
+div.download div.x
+			{background: url('../img/center_left_down.gif') left bottom no-repeat; border-top: #ebfaff 4px solid}
+div.download div.x div.x
+			{background: url('../img/0.gif') right bottom no-repeat; padding: 5px 15px 15px 18px; border: 0}
+div.download h3
+			{background:#78c8e4 url('../img/bg_boxtitle.jpg') left bottom no-repeat; font: normal 150% Tahoma; color:white; padding: 5px 5px 5px 15px; margin:0 4px 4px 4px; display:block}
+div.download a
+			{display:block; font: normal 95% Tahoma; color:#000000; text-decoration:none; padding:4px 0 4px 54px}
+div.download a b
+			{display:block; font: bold 110% Tahoma; color:#359ac9; text-decoration:underline}
+div.download a:hover,div.download a:hover b
+			{color:#ff8400}
+
+.agent_ico1
+			{background: url('../img/pic_1.gif') left top no-repeat}
+.agent_ico2
+			{background: url('../img/pic_2.gif') left top no-repeat}
+.agent_ico3
+			{background: url('../img/pic_3.gif') left top no-repeat}
+.agent_ico4
+			{background: url('../img/pic_4.gif') left top no-repeat}
+
+hr			{height:1px; border:0; border-top: #8fc9de 1px solid}
+
+div.corner1
+			{position:absolute;right:-1px;}
+div.corner1 div.c
+			{position:relative; top:-56px;}
+div.corner1 div.c2
+			{position:relative; top:-56px;}
+div.corner1 img
+			{
+				width:53px;	
+				height:60px; 
+				margin-top:-1px
+			}
+
+/*download*/
+div.leftmenubox
+			{background: url('../img/bg_box1.gif') right bottom no-repeat; z-index:30; position:relative}
+div.leftmenubox div.x
+			{background: url('../img/bg_box2.gif') left bottom no-repeat}
+div.leftmenubox div.x div.x
+			{background: url('../img/bg_box3.gif') right top no-repeat}
+div.leftmenubox div.x div.x div.x
+			{background: url('../img/bg_box4.gif') left top no-repeat}
+
+/* Slide */
+div.slide
+			{background: url('../img/bg_slide1.gif') top left no-repeat; display:table; _margin-bottom:-14px}
+div.slide div.x
+			{background: url('../img/bg_slide2.gif') left bottom no-repeat; padding: 0 0 0 32px; display: table}
+
+div.slide table.links td
+			{padding: 3px 0 0 0; vertical-align:middle}
+div.slide table.links td.cl1
+			{padding-left: 5px}
+div.slide table.links td a
+			{font: bold 100% Tahoma; text-decoration:none; line-height:11px}
+
+div.selector
+			{padding: 15px 0 4px 5px}
+div.selector a
+			{font-weight:bold; font-size:120%; margin:0px;padding:5px 6px 5px 8px; line-height:16px}
+div.selector  a.act
+			{text-decoration:none; color:#fff; margin:0 0 0 0;padding:5px 6px 5px 8px; background: url('../img/point_blue.gif') center center no-repeat}
+
+
+div.bigbtn	{margin-bottom:80px}
+div.agent
+			{position:absolute; width:50px; height:1px; display:table}
+div.agent div.x
+			{position:relative; width:300px; height:80px; left:-10px; top:-10px}
+div.agent a
+			{display:table; position:absolute; background: url('../img/bg_agent2.jpg') 62px 12px no-repeat; padding:0; z-index:100; cursor:pointer; text-decoration:none; width:309px; height:80px}
+div.agent a span.x
+			{display:block; background: url('../img/bg_agent1.gif') left top no-repeat; text-align:right; color:#ffffff; padding:20px 28px}
+div.agent a span.x span.link
+			{display:block; text-align:right; color:#ffffff; font: normal 20px Tahoma; letter-spacing:-1px; text-decoration:underline}
+div.agent a span.x span.description
+			{display:block; text-align:right; color:#ffffff; font: normal 11px Tahoma}
+
+div.agent a:hover
+			{background:  url('../img/bg_agent2.jpg') -188px 12px no-repeat; cursor:pointer; text-decoration:none}
+
+/* menu side */
+DIV.menu-side	{padding: 15px 15px 20px 25px}
+DIV.menu-side	A {
+	display:block;
+	background:url('../img/menu_li.gif') no-repeat 0 10px;
+	padding:6px 0 6px 11px;
+	color:#0F70AB
+	}
+DIV.menu-side	A:hover {
+	color:#FF8400
+	}	
+DIV.menu-side	DIV.sec	{
+	margin:0 0 3px 11px;
+	padding-bottom:5px;
+	border-bottom:1px solid #C2D958
+	}	
+DIV.menu-side	DIV.sec	A {
+	display:block;
+	font:90% tahoma;
+	background:url('../img/menu_li_sec.gif') no-repeat 0 7px;
+	padding:3px 0 2px 13px;
+	color:#547A98
+	}
+	
+DIV.menu-side	DIV.sec	A:hover {
+	color:#FF8400
+	}
+DIV.menu-side	DIV.sec	A.act {
+	font:bold 90% tahoma;
+	background:url('../img/menu_li_seca.gif') no-repeat 0 7px;
+	}	
+	
+	
+H1	{
+	font:250% 'Trebuchet MS', Tahoma, Arial, sans-serif;
+	color:#ff8800;
+	padding:18px 0 12px 0;
+	font-weight:normal;
+	margin:0;
+	line-height:26px;
+	letter-spacing:-2px;
+	}
+	
+H2	{
+	font:200% 'Trebuchet MS', Tahoma, Arial, sans-serif;
+	color:#ff8800;
+	padding:0 0 13px 0;
+	font-weight:normal;
+	margin:0;
+	line-height:22px;
+	letter-spacing:-2px;
+	}
+
+
+H3	{
+	font:150% Tahoma, Arial, sans-serif;
+	color:#0096DC;
+	padding:0 10px 0px 0;
+	font-weight:normal;
+	margin:0 0 10px 0;
+	}	
+
+.contentinner H3	{
+	font:150% Tahoma, Arial, sans-serif;
+	color:#0096DC;
+	padding:0 10px 0 0;
+	font-weight:normal;
+	margin:0;
+	display:inline;
+	}	
+
+H5	{
+	font:200% 'Trebuchet MS', Tahoma, Arial, sans-serif;
+	color:#929D9E;
+	padding:5px 0 0px 0;
+	font-weight:normal;
+	margin:0;
+	line-height:22px;
+	letter-spacing:-1px;
+	}	
+	
+
+.contentinner	DIV.note	{
+	padding:0 0 25px 1px;
+	}	
+	
+/* BC */	
+DIV.bc	{
+	font:95% tahoma;
+	color:#000000;
+	padding:0 0 0 1px
+	}
+DIV.bc	SPAN	{
+	font:91% verdana;
+	color:#7C8283
+	}
+	
+/* capability */
+TABLE.capability	TD	{
+	padding-bottom:8px
+	}	
+TABLE.capability	TD.ico	{
+	padding-top:6px
+	}
+	
+	
+	
+/* DOWNLOAD */
+.contentinner	DIV.download-all {
+	height:174px;
+	}		
+.contentinner	DIV.download-allblock {
+	width:353px; float:right 
+	}	
+.contentinner	DIV.download-agent
+			{display:table; padding-left:40px}
+.contentinner	DIV.download-agent div.x
+			{position:relative; width:300px; height:80px; left:0px; top:-10px}
+.contentinner	DIV.download-agent a
+			{display:table; position:absolute; background: url('../img/bg_agent2.jpg') 62px 12px no-repeat; padding:0; z-index:100; cursor:pointer; text-decoration:none; width:309px; height:80px}
+.contentinner	DIV.download-agent a span.x
+			{display:block; background: url('../img/bg_agent1d.gif') left top no-repeat; text-align:right; color:#ffffff; padding:20px 28px}
+.contentinner	DIV.download-agent a span.x span.link
+			{display:block; text-align:right; color:#ffffff; font: normal 20px Tahoma; letter-spacing:-1px; text-decoration:underline}
+.contentinner	DIV.download-agent a span.x span.description
+			{display:block; text-align:right; color:#ffffff; font: normal 11px Tahoma}
+
+.contentinner	DIV.download-agent a:hover
+			{background:  url('../img/bg_agent2.jpg') -188px 12px no-repeat; cursor:pointer; text-decoration:none}
+
+.contentinner	DIV.note-download	{
+	padding:0 340px 25px 1px; margin-top:-174px;
+}	
+
+DIV.download-agent A	{
+	text-decoration:none;
+	color:#fff;
+	}
+DIV.download-agent A:hover	{
+	color:#fffac2;
+	}
+DIV.download-agent A span	{
+	text-decoration:underline;	
+	font-size:150%;	
+	}	
+TABLE.download-step	TD	{
+	padding:0 0 10px 10px
+	}	
+TABLE.download-step	TD.step	{
+	padding-top:6px
+	}		

@@ -1,69 +1,95 @@
-<!DOCTYPE html>
-<html>
+<html style="--wm-toolbar-height: 1px;">
+
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/resources/styles/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Agent@Mail.Ru</title>
+	<title>{ifset title}{include title|stripHtml} | {/ifset} Проект Renaissance</title>
+	<meta content="text/html; charset=utf8" http-equiv="content-type">
+	<link rel="SHORTCUT ICON" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/stl.css">
+	<script type="text/javascript" src="js/rotator.js"></script>
 </head>
 
-<body>
-	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+<body bgcolor="#FFFFFF">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="{ifset title}inner{else}index{/ifset}">
+		<tbody>
+			<tr>
 
-	<div class="page">
-		<div class="header"> <!-- Шапка -->
-			<div class="logo">
-				<a href="#" title="Агент@Mail.Ru"></a> <!-- Лого -->
-			</div>
-			<div class="menu"> <!-- Меню -->
-				<a href="#">Загрузить</a>
-				<a href="#">Регистрация</a>
-				<a href="#">Найти собеседника</a>
-				<a href="#">Поддержать проект ;-)</a>
-			</div>
-		</div>
-		<div class="page_body"> <!-- Вся хуйня страницы -->
-			<div class="left_right">
-				<div class="left"> <!-- Сторона с листочком -->
-					<div class="notepaper">  <!-- Листочек -->
-						<div class="list">  <!-- Список -->
-							<div class="title">
-								Скачать Агент:
-							</div>
-							<a href="#">Агент для Windows</a>
-							<a href="#">Мобильный J2ME Агент</a>
-						</div>
+				<td width="5%" class="col1"><img width="1" height="1" src="/img/0.gif"></td>
+				<td width="90%" class="col2">
+					<div class="topmenu">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="topmenu">
+							<tbody>
+								<tr>
+									<td width="25%" class="c1" nowrap=""><a href="/"><img
+												src="img/agent_mailru_logo_a.gif" alt="agent@mail.ru" width="81"
+												height="48" border="0"></a><a href="/"><img
+												src="img/agent_mailru_logo.gif" alt="agent@mail.ru" width="135"
+												height="48" border="0"></a></td>
+									<td width="75%" class="c2" nowrap="">
+										<a href="about"><b>О программе</b></a>
+										<a href="download"><b>Загрузить</b></a>
+										<a href="https://web.archive.org/web/20080901095650/http://voip.agent.mail.ru/"><b>Телефонные
+												звонки</b></a>
+										<a href="findcontact"><b>Найди собеседника</b></a>
+										<a href="help"><b>Помощь</b></a>
+										<a href="developers"><b>Разработчикам ;-)</b></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="notepaper blue" style="margin-top: 10px;">  <!-- Листочек -->
-						<div class="list">  <!-- Список -->
-							<div class="title">
-								Статистика по использованию:
-							</div>
-							<a href="#">234 зарегистрированных пользователя</a>
-							<a href="#">52 пользователя в сети</a>
-						</div>
+
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content">
+						<tbody>
+							<tr>
+								<td width="25%" class="c1">
+									<!--col1-->
+									<div class="download">
+										<div class="x">
+											<h3>Загрузить: </h3>
+											<div class="x"><a href="download/agent_windows/download.html"
+											 class="agent_ico1"><b>Mail.Ru Агент</b>для Windows</a>
+												<a href="download/mobile_agent" class="agent_ico2"><b>Мобильный	Агент</b>Java</a>
+												<a href="download/agent_windowsmobile/download.html"
+													class="agent_ico3"><b>Мобильный Агент</b>для Windows Mobile</a><br>
+												<br><br>
+											</div>
+										</div>
+										<div class="corner1">
+											<div class="c"><img src="img/corner1.png" width="53" height="60"></div>
+										</div>
+									</div>
+								</td>
+								<td width="5%" class="c2"><img src="img/0.gif" width="43" height="1"></td>
+								<td width="70%" class="c3">
+									<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+									{include content}
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="footer">
+						<div class="x"><img src="img/agent_mailru_logo_small.gif" alt="" width="114" height="24"
+								border="0"></div>
 					</div>
-				</div>
-				<div class="right"> <!-- Правая сторона с информацией -->
-					{include content}
-				</div>
-			</div>
-		</div>
-		<div class="footer_blue">
-			<img src="/resources/images/agent_mailru_logo_small.gif">
-		</div>
-		<div class="footer">
-			<div class="left">
-				© Mail.Ru<br>
-				© 2024, Команда Tutmonde<br>
-			</div>
-			<div class="right">
-				<a href="#">Telegram</a> | 
-				<a href="#">OpenVK</a> | 
-				<a href="#">GitHub</a>
-			</div>
-		</div>
-	</div>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="footer">
+						<tbody>
+							<tr>
+								<td width="30%" class="c1">© Проект Renaissance. НЕ ИМЕЕТ НИКАКОГО ОТНОШЕНИЯ К VK GROUP,
+									ООО "ВК" И ЯВЛЯЕТСЯ ЛЮБИТЕЛЬСКИМ НЕКОММЕРЧЕСКИМ ПРОЕКТОМ</td>
+								<td width="70%" class="c2"><a
+										href="https://t.me/renaissancemrim">Telegram</a> | <a
+										href="https://flirb.net/profile.php?username=renaissance">Flirb</a> | <a
+										href="/about">О проекте</a> </td>
+							</tr>
+						</tbody>
+					</table>
+					<div><img src="img/0.gif" alt="1" width="990" height="1"></div>
+				</td>
+				<td width="5%" class="col3"><img src="img/0.gif" width="1" height="1"></td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 
 {block scripts}
