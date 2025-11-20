@@ -19,19 +19,23 @@
 						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="topmenu">
 							<tbody>
 								<tr>
-									<td width="25%" class="c1" nowrap=""><a href="/"><img
-												src="img/agent_mailru_logo_a.gif" alt="agent@mail.ru" width="81"
-												height="48" border="0"></a><a href="/"><img
-												src="img/agent_mailru_logo.gif" alt="agent@mail.ru" width="135"
-												height="48" border="0"></a></td>
+									<td width="25%" class="c1" nowrap="">
+										<a href="/">
+											<img src="img/renaissance_logo.gif" alt="Renaisssance" width="175" height="48" border="0">
+										</a>
+									</td>
 									<td width="75%" class="c2" nowrap="">
 										<a href="about"><b>О программе</b></a>
 										<a href="download"><b>Загрузить</b></a>
-										<a href="https://web.archive.org/web/20080901095650/http://voip.agent.mail.ru/"><b>Телефонные
-												звонки</b></a>
-										<a href="findcontact"><b>Найди собеседника</b></a>
 										<a href="help"><b>Помощь</b></a>
 										<a href="developers"><b>Разработчикам ;-)</b></a>
+										{if $user->isLoggedIn()}
+										<a href="anketa_edit"><b>Анкета {$userObj->getNickname()}</b></a>
+										<a href="logout"><b>Выйти</b></a>
+										{else}
+										<a href="login"><b>Войти</b></a>
+										<a href="reg"><b>Зарегистрироваться</b></a>
+										{/if}
 									</td>
 								</tr>
 							</tbody>

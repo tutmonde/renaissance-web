@@ -14,7 +14,7 @@ class UserIdentity implements IIdentity
 {
     private int $id;
 
-    public function __construct($id = 0)
+    public function __construct(int $id)
     {
         $this->id = $id;
     }
@@ -27,10 +27,5 @@ class UserIdentity implements IIdentity
     public function getRoles(): Array
     {
         return ['user'];
-    }
-
-    public function getUser(): ?User
-    {
-        return new User($this->id);
     }
 }

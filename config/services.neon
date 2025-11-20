@@ -1,9 +1,7 @@
 services:
 	- App\Core\RouterFactory::createRouter
+	- App\UI\Presenter
 	- App\Auth\Auth
-	- App\Auth\User
-	- App\Auth\UserIdentity
-
 
 search:
 	-	in: %appDir%

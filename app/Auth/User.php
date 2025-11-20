@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace App\Auth;
 
-use Nette;
 use Nette\Database\Explorer;
+use Nette\Database\Table\ActiveRow;
 
 class User
 {
     private int $id;
-    private Explorer $db;
+    private ActiveRow $db;
 
-    public function __construct($id = 0)
+    public function __construct(Explorer $db, int $id)
     {
         $this->id = $id;
-        $this->db = $db->table('users')->get($id);
+        $this->db = $db->table('user')->get($id);
     }
 
     public function getId()

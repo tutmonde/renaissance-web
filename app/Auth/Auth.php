@@ -8,6 +8,7 @@ use Nette\Security\IAuthenticator;
 use Nette\Security\Identity;
 use Nette\Security\AuthenticationException;
 use Nette\Database\Explorer;
+use Nette\Database\Table\Selection;
 
 use App\Auth\User;
 use App\Auth\UserIdentity;
@@ -20,18 +21,21 @@ final class Auth implements IAuthenticator
 
     public function __construct(Explorer $db)
     {
-        $this->db = $db->table('users');
+        $this->db = $db;
     }
 
-    public function authenticate($email, $password)
+    public function authenticate($args)
     {
-        if (!strpos($email, "@")) {
+        [$email, $password] = $args;
+
+        if (strpos($email, "@") !== false) {
             [$login, $domain] = explode("@", $email, 2);
         } else {
             throw new AuthenticationException("Invalid email");
         }
 
         $row = $this->db
+            ->table('user')
             ->where('login', $login)
             ->where('domain', $domain)
             ->fetch();

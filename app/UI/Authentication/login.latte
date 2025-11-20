@@ -1,0 +1,32 @@
+{block title}
+Вход в аккаунт
+{/block}
+
+{block content}
+<h1>Вход в аккаунт</h1>
+
+<form action="/login" method="post">
+    <table border="0">
+        <tbody>
+            <tr>
+                <td>
+                    E-mail:
+                </td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Пароль:
+                </td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="submit" value="Войти">
+</form>
+

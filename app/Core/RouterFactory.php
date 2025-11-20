@@ -18,6 +18,8 @@ final class RouterFactory
 		$router->addRoute('/', 'Home:default');
 		$router->addRoute('/download', 'Home:download');
 		$router->addRoute('/donate', 'Home:donate');
+		$router->addRoute('/login', 'Authentication:login');
+		$router->addRoute('/logout', 'Authentication:logout');
 		return $router;
 	}
 }
